@@ -9,6 +9,7 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #022543;
+	z-index: 10;
 }
 .topnav a {
     float: left;
@@ -61,7 +62,7 @@ footer{
 	header { padding-top:40px; }
 }
 .footer-distributed{
-	background-color: #273847;
+	background-color: #0d3853;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -91,7 +92,8 @@ footer{
 	width: 30%;
 }
 .footer-distributed h3 span{
-	color:  #b51a1b;
+	color:  #fd3333;
+	font-weight: 600;
 }
 
 /* Footer links */
@@ -117,7 +119,7 @@ footer{
 	width: 35%;
 }
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
+	background-color:  #013e64;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -145,11 +147,6 @@ footer{
 	font-size:14px;
 	line-height:2;
 }
-.footer-distributed .footer-center p a{
-	color:  #b51a1b;
-	text-decoration: none;;
-}
-
 
 /* Footer Right */
 .footer-distributed .footer-right{
@@ -177,7 +174,7 @@ footer{
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  #13608f;
 	border-radius: 4px;
     text-decoration: none;
 	font-size: 20px;

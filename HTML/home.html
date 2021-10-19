@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travez</title>
     <link rel="stylesheet" href="../CSS/menu&footer.css">
+    <link rel="stylesheet" href="../CSS/body.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -28,15 +30,60 @@
 
         <!-- Body -->
         <div id="content">
-            <div id="poster">
-                <img src="" alt="">
+            <div id="logo_img">
+                <div id="logo">
+                    <h1>LOGO</h1>
+                    <p>Vietnam is your home!</p>
+                    <button class="button" id="video_button">
+                        <i class="ri-play-line" id="video_icon"></i>
+                    </button>
+                </div>
             </div>
+            <div id="videoContainer"></div>
+            <video class="video_stop video top" controls id="video_file">
+                <source src="../IMG/y2mate.com - Vietnam  From Above_1080p.mp4" type="video/mp4">
+            </video>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti excepturi praesentium earum veniam.
+                Dolore magni hic quae veritatis placeat saepe aut voluptatibus? Natus blanditiis, doloribus maiores
+                corrupti adipisci nam perspiciatis.
+            </div>
+
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+                <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+                 <div class="mySlides fade">
+                   <div class="numbertext">1 / 3</div>
+                   <img src="../IMG/z2859594790499_08a12726b992aab63d2ababe665183e4.jpg">
+                   <div class="text">Nội Dung 1</div>
+                 </div>
+                <div class="mySlides fade">
+                   <div class="numbertext">2 / 3</div>
+                   <img src="../IMG/z2859594797029_9fb0a68b4cc4610c3dfd4774fa6ffa0a.jpg">
+                   <div class="text">Nội Dung 2</div>
+                 </div>
+                <div class="mySlides fade">
+                   <div class="numbertext">3 / 3</div>
+                   <img src="../IMG/z2859594828644_dd166ff8f6244ec36f22f5e58f0af454.jpg">
+                   <div class="text">Nội Dung 3</div>
+                 </div>
+                <!-- Nút điều khiển mũi tên-->
+                 <a class="prev" onclick="plusSlides(-1)">❮</a>
+                 <a class="next" onclick="plusSlides(1)">❯</a>
+               </div>
+               <br>
+              <!-- Nút tròn điều khiển slideshow-->
+               <div style="text-align:center">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+               </div>
         </div>
 
         <!-- Footer -->
         <footer class="footer-distributed">
             <div class="footer-left">
-            <img src="img/logo.png">
+                <img src="img/logo.png">
                 <h3>About<span>Travez</span></h3>
 
                 <p class="footer-links">
@@ -55,7 +102,7 @@
             <div class="footer-center">
                 <div>
                     <i class="fa fa-map-marker"></i>
-                        <p>Hanoi, Vietnam</p>
+                    <p>Hanoi, Vietnam</p>
                 </div>
 
                 <div>
@@ -64,13 +111,14 @@
                 </div>
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@eduonix.com">xxxxx@gmail.com</a></p>
+                    <p>xxxxx@gmail.com</p>
                 </div>
             </div>
             <div class="footer-right">
                 <p class="footer-company-about">
                     <span>About the company</span>
-                    We .</p>
+                    We .
+                </p>
                 <div class="footer-icons">
                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                     <a href="https://twitter.com/" class="fa fa-twitter"></a>
