@@ -11,12 +11,21 @@ function navbar() {
 // Video
 const video_button = document.getElementById('video_button');
 const video_file = document.getElementById('video_file');
+const closeBtn = document.getElementById('closeBtn');
 const videoContainer = document.getElementById('videoContainer')
 video_button.addEventListener('click', (e)=> {
   e.preventDefault();
   video_file.classList.add('video_play');
   videoContainer.style.background = '#0000007e';
   videoContainer.style.display = 'block';
+  closeBtn.style.display = 'block';
+})
+closeBtn.addEventListener('click', (e)=> {
+  e.preventDefault();
+  video_file.classList.remove('video_play');
+  videoContainer.style.background = '';
+  videoContainer.style.display = 'none';
+  closeBtn.style.display = 'none';
 })
 
 // Slideshow

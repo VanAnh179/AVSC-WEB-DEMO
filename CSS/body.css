@@ -52,6 +52,16 @@
     background: #b51a1b;
     color: #319cfa;
 }
+.closeBtn {
+    display: none;
+    position: fixed;
+    z-index: 21;
+    top: 5vh;
+    right: 2vh;
+    transform: translate(-50%, -50%);
+    background-color: #0273d6;
+    color: #ff0707;
+}
 
 
 
