@@ -8,6 +8,9 @@ function navbar() {
   }
 }
 
+// Hashtags
+
+
 // Video
 const video_button = document.getElementById('video_button');
 const video_file = document.getElementById('video_file');
@@ -26,6 +29,7 @@ closeBtn.addEventListener('click', (e)=> {
   videoContainer.style.background = '';
   videoContainer.style.display = 'none';
   closeBtn.style.display = 'none';
+  video_file.pause();
 })
 
 // Slideshow

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/menu&footer.css">
     <link rel="stylesheet" href="../CSS/body.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -30,61 +33,99 @@
 
         <!-- Body -->
         <div id="content">
-            <div id="logo_img">
-                <div id="logo">
-                    <h1>LOGO</h1>
-                    <p>Vietnam is your home!</p>
-                    <button class="button" id="video_button">
-                        <i class="ri-play-line" id="video_icon"></i>
-                    </button>
+            <!-- Banner -->
+            <div class="banner">
+                <div id="logo_img">
+                    <div id="logo">
+                        <img src="../IMG/Travez logo white.png" alt="">
+                        <p>Travel is easy!</p>
+                        <button class="button" id="video_button">
+                            <i class="ri-play-line" id="video_icon"></i>
+                        </button>
+                    </div>
                 </div>
+                <div id="videoContainer"></div>
+                <video class="video_stop video top" controls id="video_file">
+                    <source src="../IMG/y2mate.com - Vietnam  From Above_1080p.mp4" type="video/mp4">
+                </video>
+                <button class="closeBtn" id="closeBtn">X</button>
             </div>
-            <div id="videoContainer"></div>
-            <video class="video_stop video top" controls id="video_file">
-                <source src="../IMG/y2mate.com - Vietnam  From Above_1080p.mp4" type="video/mp4">
-            </video>
-            <button class="closeBtn" id="closeBtn">X</button>
-            <div>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti excepturi praesentium earum veniam.
-                Dolore magni hic quae veritatis placeat saepe aut voluptatibus? Natus blanditiis, doloribus maiores
-                corrupti adipisci nam perspiciatis.
+
+            <!-- Hashtag -->
+            <div class="hashtag">
+                <a href="javascript:void(0);" class="icon" onclick="tag()">
+                    <i class="ri-equalizer-line"></i>
+                </a>
+                
+                <div id="tags">
+                    <div class="tag">#vietnamtravel</div>
+                    <div class="tag">#beach</div>
+                    <div class="tag">VietNam</div>
+                    <div class="tag">#historic</div>
+                    <div class="tag">#Topwonders</div>
+                </div>
             </div>
 
             <!-- Slideshow -->
-            <div class="slideshow-container">
-                <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
-                 <div class="mySlides fade">
-                   <div class="numbertext">1 / 3</div>
-                   <img src="../IMG/z2859594790499_08a12726b992aab63d2ababe665183e4.jpg">
-                   <div class="text">Nội Dung 1</div>
-                 </div>
-                <div class="mySlides fade">
-                   <div class="numbertext">2 / 3</div>
-                   <img src="../IMG/z2859594797029_9fb0a68b4cc4610c3dfd4774fa6ffa0a.jpg">
-                   <div class="text">Nội Dung 2</div>
-                 </div>
-                <div class="mySlides fade">
-                   <div class="numbertext">3 / 3</div>
-                   <img src="../IMG/z2859594828644_dd166ff8f6244ec36f22f5e58f0af454.jpg">
-                   <div class="text">Nội Dung 3</div>
-                 </div>
-                <!-- Nút điều khiển mũi tên-->
-                 <a class="prev" onclick="plusSlides(-1)">❮</a>
-                 <a class="next" onclick="plusSlides(1)">❯</a>
-               </div>
-               <br>
-              <!-- Nút tròn điều khiển slideshow-->
-               <div style="text-align:center">
-                 <span class="dot" onclick="currentSlide(1)"></span>
-                 <span class="dot" onclick="currentSlide(2)"></span>
-                 <span class="dot" onclick="currentSlide(3)"></span>
-               </div>
+            <div class="slideshow">
+                <h2 class="title">TOP POSTS</h2>
+                <div class="slideshow-container">
+                    <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../IMG/pexels-hugo-heimendinger-2977464.jpg">
+                    <div class="text">Nội Dung 1</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../IMG/pexels-q-hưng-phạm-2965773.jpg">
+                    <div class="text">Nội Dung 2</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../IMG/pexels-thanhhoa-tran-1582977.jpg">
+                    <div class="text">Nội Dung 3</div>
+                    </div>
+                    <!-- Nút điều khiển mũi tên-->
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <!-- Nút tròn điều khiển slideshow-->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <!-- Post -->
+            <div class="posts">
+                <h2 class="title">POSTS YOU MAY LIKE</h2>
+                <div class="postContent">
+                    <div class="imgPost">
+                        <img src="../IMG/Travez logo navy.png" alt="">
+                    </div>
+                    <div class="post">
+                        <div class="avatar">
+                            <div class="circle">
+                                <img src="../IMG/Travez logo navy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="postText">
+                            <div class="authorName">Author's name</div>
+                            <p>Travez - a reliable travel assistant for you!</p>
+                            <p>With Travez, travel is easy!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->
         <footer class="footer-distributed">
             <div class="footer-left">
-                <img src="img/logo.png">
+                <img src="../IMG/Travez logo white.png">
                 <h3>About<span>Travez</span></h3>
 
                 <p class="footer-links">
